@@ -1033,28 +1033,6 @@
 			});
 		</script>
 		
-		<script type="text/javascript">
-			const o_param = "{origin}";
-			const fb_param = "{click.var:fbpixel}";
-			window.__origin_param = "hZctmxiOZH-159964-ff716a1a-bf97-4099-88ec-27e31a1614c4";
-
-			const orderHref = window.__order_href;
-			const orderOriginParam = window.__origin_param;
-
-			const withoutCartHref = `${orderHref}?origin=${orderOriginParam}`;
-
-			function fullfill_phone(e) {
-				var a = "+47" + e.value;
-				document.getElementById("aff_sub6").value = a;
-			}
-
-			$(".cart-form").submit(function () {
-				var inputField = $("#phoneInput");
-
-				var inputValue = inputField.val().replace(/[^0-9]/g, "");
-				inputField.val(inputValue);
-			});
-		</script>
 		
 		<script>
     		document.addEventListener('DOMContentLoaded', function() {
