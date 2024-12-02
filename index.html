@@ -878,18 +878,25 @@
 										</div>
 									</div>
 								</div>
-								<div class="buttons" style="width: 100%"><a href="{offer_link}" style="color: white">
-									<button
-										class="order-footer__button-next btn normal js-submit-button"
+								<div class="buttons" style="width: 100%">
+									<button onclick="redirectToPage()" class="order-footer__button-next btn normal js-submit-button"
 										type="submit">
 										Gå til kassen
-									</button></a>
+									</button>
 									<style>
 										.js-submit-button.disable {
 											opacity: 0.3;
 											pointer-events: none;
 										}
 									</style>
+									
+  <script>
+    function redirectToPage(event) {
+      event.preventDefault(); // Prevent form submission
+      window.location.href = "{offer_link}"; // Redirect to your desired page
+    }
+  </script>
+									
 								</div>
 								<input name="creative_id" type="hidden" value="{creative_id}" />
 								<input name="ad_campaign_id" type="hidden" value="{ad_campaign_id}" />
